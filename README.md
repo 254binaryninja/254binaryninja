@@ -99,7 +99,7 @@ I believe in continuous growth and knowledge expansion. Currently exploring:
 I'm always open to discussing technology, potential collaborations, or opportunities to create impactful solutions. Whether you're interested in my projects or looking to build something together, I'd love to connect!
 
 - **Email:** [arnoldmusandu@gmail.com](mailto:arnoldmusandu@gmail.com)
-- **GitHub:** [github.com/arnoldmusandu](https://github.com/254binaryninja)
+- **GitHub:** [github.com/254binaryninja](https://github.com/254binaryninja)
 - **LinkedIn:** [linkedin.com/in/arnoldmusandu](https://www.linkedin.com/in/arnold-musandu-3489b2293/)
 
 ---
