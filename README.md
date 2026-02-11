@@ -1,7 +1,7 @@
 # Arnold Musandu
 
 **Platform / Backend Engineer** building and operating high-traffic systems from Nairobi.
-Currently helping scale **Tucheze** to **170K+ users**, with a focus on **database performance, infrastructure efficiency, and reliable deployments**.
+Currently helping scale **Tucheze** to **1M+ users**, with a focus on **database performance, infrastructure efficiency, and reliable deployments**.
 
 I care about systems that are fast, observable, cost-efficient, and boring in production.
 
@@ -9,7 +9,7 @@ I care about systems that are fast, observable, cost-efficient, and boring in pr
 
 ## What I’m Working On
 
-### **Tucheze.com** — Betting Platform (170K+ users)
+### **Tucheze.com** — Betting Platform (1M+ users)
 
 * Optimized PostgreSQL queries and schema design to **reduce infrastructure costs**
 * Built and deployed **fraud detection microservices**
