@@ -40,8 +40,8 @@ I care about systems that are fast, observable, cost-efficient, and **boring in 
       <b><a href="https://faidabet.co.ke">FaidaBet</a></b> · betting &amp; games
     </td>
     <td width="50%" align="center">
-      <b>PropMS</b> · property management<br>
-      <sub>internal tools, not public yet</sub>
+      <a href="https://propertyms.org"><img src="./assets/sites/propms.jpg" alt="PropMS"></a><br>
+      <b><a href="https://propertyms.org">PropMS</a></b> · property management
     </td>
   </tr>
 </table>
