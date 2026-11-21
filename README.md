@@ -11,23 +11,44 @@ I care about systems that are fast, observable, cost-efficient, and **boring in 
 
 ---
 
-## What I run in production
+## Things I help run
 
-| Product | What I do | Live |
-|---|---|---|
-| **Tucheze**: betting platform, 1M+ users | Moved Django to a Go V2 stack on DigitalOcean behind Kong. I tune Postgres query plans and schema to cut infra cost, built the fraud-detection services, and own CI/CD and the staged staging → prod rollouts. | [tucheze.com](https://tucheze.com) |
-| **MyTickets.africa**: event ticketing | Runs on the same gateway and deploy pipeline as Tucheze. | [mytickets.africa](https://mytickets.africa) |
-| **CloudPay**: payments | Gateway, infra, and rollout workflow; patched Kong across all three stacks for the Nov 2026 nginx CVEs. | [cloudpay.africa](https://cloudpay.africa) |
-| **FaidaBet**: betting site | Next.js frontend with Payload CMS, a back office, and an embedded sportsbook and games. | [faidabet.co.ke](https://faidabet.co.ke) |
-| **GigForce**: gig-work marketplace | API, frontend, and infra. | [gigforce.africa](https://gigforce.africa) |
-| **PropMS**: property management | Core backend plus an internal ops console that imports the core as a library. | |
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://tucheze.com"><img src="./assets/sites/tucheze.jpg" alt="Tucheze"></a><br>
+      <b><a href="https://tucheze.com">Tucheze</a></b> · betting, 1M+ players
+    </td>
+    <td width="50%" align="center">
+      <a href="https://mytickets.africa"><img src="./assets/sites/mytickets.jpg" alt="MyTickets.africa"></a><br>
+      <b><a href="https://mytickets.africa">MyTickets</a></b> · event ticketing
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://cloudpay.africa"><img src="./assets/sites/cloudpay.jpg" alt="CloudPay"></a><br>
+      <b><a href="https://cloudpay.africa">CloudPay</a></b> · payments across Africa
+    </td>
+    <td width="50%" align="center">
+      <a href="https://gigforce.africa"><img src="./assets/sites/gigforce.jpg" alt="GigForce"></a><br>
+      <b><a href="https://gigforce.africa">GigForce</a></b> · workforce marketplace
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://faidabet.co.ke"><img src="./assets/sites/faidabet.jpg" alt="FaidaBet"></a><br>
+      <b><a href="https://faidabet.co.ke">FaidaBet</a></b> · betting &amp; games
+    </td>
+    <td width="50%" align="center">
+      <b>PropMS</b> · property management<br>
+      <sub>internal tools, not public yet</sub>
+    </td>
+  </tr>
+</table>
 
 ## Campus Connect: AI learning platform (200+ students)
 
-Split into two services on a shared Postgres:
-
-* **nightwing**: a Go gateway and CRUD API (chi · pgx · sqlc)
-* **robin**: an AI service (Bun · Hono · Vercel AI SDK). It does RAG over Pinecone with Gemini embeddings and runs a document ingestion pipeline (extract → summarize → chunk → embed). A **multi-provider model router** handles failover with cooldowns, monthly spend caps, and per-call usage logging.
+A study platform with AI that reads your documents, P2P file sharing, and an LLM layer that stays up when a provider goes down.
 
 ## Earlier
 
