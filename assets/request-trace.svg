@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" role="img" aria-label="Animated request trace: client to Cloudflare to Kong to Go service to Postgres">
+<style>
+.t{font:600 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#e6edf3}
+.s{font:11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#7d8590}
+.log{font:14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#7ee787}
+.ring{fill:none;stroke:#39d353;stroke-width:2;transform-box:fill-box;transform-origin:center;opacity:0;animation:p .8s ease-out infinite}
+@keyframes p{0%{opacity:.9;transform:scale(.6)}70%{opacity:0;transform:scale(1.9)}100%{opacity:0}}
+.fr{animation-name:pf;animation-duration:4.8s}
+@keyframes pf{0%{opacity:.9;transform:scale(.6)}12%{opacity:0;transform:scale(1.9)}100%{opacity:0}}
+@keyframes blink{50%{opacity:0}}
+.cur{animation:blink 1s steps(1) infinite}
+.static{display:none}
+@media (prefers-reduced-motion:reduce){.ring,.pk,.anim{display:none}.static{display:inline}.cur{animation:none}}
+</style>
+<defs><filter id="g" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="wire" gradientUnits="userSpaceOnUse" x1="80" x2="780"><stop offset="0" stop-color="#1f6feb"/><stop offset="1" stop-color="#39d353"/></linearGradient></defs>
+<rect width="880" height="300" rx="12" fill="#0d1117" stroke="#30363d"/>
+<circle cx="22" cy="20" r="5" fill="#ff5f56"/><circle cx="40" cy="20" r="5" fill="#ffbd2e"/><circle cx="58" cy="20" r="5" fill="#27c93f"/>
+<text class="s" x="440.0" y="24" text-anchor="middle">~/arnold — live request trace</text>
+<line x1="0" y1="38" x2="880" y2="38" stroke="#21262d"/>
+<path d="M80,120 H780" stroke="url(#wire)" stroke-width="2" stroke-dasharray="4 6" opacity=".55"/>
+<path d="M590,120 V215" stroke="#d29922" stroke-width="2" stroke-dasharray="4 6" opacity=".5"/>
+<circle class="ring" cx="80" cy="120" r="16" style="animation-delay:0.000s"/>
+<circle cx="80" cy="120" r="9" fill="#161b22" stroke="#39d353" stroke-width="2"/>
+<text class="t" x="80" y="92" text-anchor="middle">client</text>
+<text class="s" x="80" y="154" text-anchor="middle">web · app</text>
+<circle class="ring" cx="250" cy="120" r="16" style="animation-delay:0.777s"/>
+<circle cx="250" cy="120" r="9" fill="#161b22" stroke="#39d353" stroke-width="2"/>
+<text class="t" x="250" y="92" text-anchor="middle">cloudflare</text>
+<text class="s" x="250" y="154" text-anchor="middle">edge</text>
+<circle class="ring" cx="420" cy="120" r="16" style="animation-delay:0.754s"/>
+<circle cx="420" cy="120" r="9" fill="#161b22" stroke="#39d353" stroke-width="2"/>
+<text class="t" x="420" y="92" text-anchor="middle">kong</text>
+<text class="s" x="420" y="154" text-anchor="middle">3.9.5</text>
+<circle class="ring" cx="590" cy="120" r="16" style="animation-delay:0.731s"/>
+<circle cx="590" cy="120" r="9" fill="#161b22" stroke="#39d353" stroke-width="2"/>
+<text class="t" x="590" y="92" text-anchor="middle">go svc</text>
+<text class="s" x="590" y="154" text-anchor="middle">tucheze-core</text>
+<circle class="ring" cx="780" cy="120" r="16" style="animation-delay:0.000s"/>
+<circle cx="780" cy="120" r="9" fill="#161b22" stroke="#39d353" stroke-width="2"/>
+<text class="t" x="780" y="92" text-anchor="middle">postgres</text>
+<text class="s" x="780" y="154" text-anchor="middle">tuned plans</text>
+<circle class="ring fr" cx="590" cy="215" r="14" style="stroke:#d29922;animation-delay:2.766s"/>
+<circle cx="590" cy="215" r="7" fill="#161b22" stroke="#d29922" stroke-width="2"/>
+<text class="s" x="606" y="219" style="fill:#d29922">fraud-detect</text>
+<circle class="pk" r="4" fill="#7ee787" filter="url(#g)" opacity="0"><animateMotion path="M80,120 H780" dur="3.2s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="3.2s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle class="pk" r="4" fill="#7ee787" filter="url(#g)" opacity="0"><animateMotion path="M80,120 H780" dur="3.2s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="3.2s" begin="0.8s" repeatCount="indefinite"/></circle>
+<circle class="pk" r="4" fill="#7ee787" filter="url(#g)" opacity="0"><animateMotion path="M80,120 H780" dur="3.2s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="3.2s" begin="1.6s" repeatCount="indefinite"/></circle>
+<circle class="pk" r="4" fill="#7ee787" filter="url(#g)" opacity="0"><animateMotion path="M80,120 H780" dur="3.2s" begin="2.4000000000000004s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.05;.9;1" dur="3.2s" begin="2.4000000000000004s" repeatCount="indefinite"/></circle>
+<circle class="pk" r="4" fill="#e3b341" filter="url(#g)" opacity="0"><animateMotion path="M80,120 H590 V215" dur="4.8s" keyPoints="0;1;1" keyTimes="0;0.576;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.03;0.576;0.616;1" dur="4.8s" repeatCount="indefinite"/></circle>
+<text class="s" x="24" y="240">deploy.log</text>
+<line x1="24" y1="248" x2="856" y2="248" stroke="#21262d"/>
+<clipPath id="c0"><rect x="40" y="252" height="22" width="0"><animate attributeName="width" calcMode="discrete" dur="12.0s" begin="0.0s" repeatCount="indefinite" values="0.0;0.0;8.4;16.9;25.3;33.7;42.1;50.6;59.0;67.4;75.9;84.3;92.7;101.2;109.6;118.0;126.4;134.9;143.3;151.7;160.2;168.6;177.0;185.5;193.9;202.3;210.8;219.2;227.6;236.0;244.5;252.9;261.3;269.8;278.2;286.6;295.1;303.5;311.9;320.3;328.8;337.2;345.6;354.1;362.5;370.9;370.9;0.0;0.0" keyTimes="0.0000;0.0000;0.0028;0.0057;0.0085;0.0114;0.0142;0.0170;0.0199;0.0227;0.0256;0.0284;0.0312;0.0341;0.0369;0.0398;0.0426;0.0455;0.0483;0.0511;0.0540;0.0568;0.0597;0.0625;0.0653;0.0682;0.0710;0.0739;0.0767;0.0795;0.0824;0.0852;0.0881;0.0909;0.0938;0.0966;0.0994;0.1023;0.1051;0.1080;0.1108;0.1136;0.1165;0.1193;0.1222;0.1250;0.2458;0.2500;1.0000"/></rect></clipPath>
+<text class="log anim" x="40" y="268" clip-path="url(#c0)">$ make deploy env=prod   # kong 3.8 -&gt; 3.9.5</text>
+<clipPath id="c1"><rect x="40" y="252" height="22" width="0"><animate attributeName="width" calcMode="discrete" dur="12.0s" begin="3.0s" repeatCount="indefinite" values="0.0;0.0;8.4;16.9;25.3;33.7;42.1;50.6;59.0;67.4;75.9;84.3;92.7;101.2;109.6;118.0;126.4;134.9;143.3;151.7;160.2;168.6;177.0;185.5;193.9;202.3;210.8;219.2;227.6;236.0;244.5;252.9;261.3;269.8;278.2;286.6;295.1;303.5;311.9;320.3;328.8;337.2;345.6;354.1;362.5;370.9;379.3;387.8;396.2;404.6;413.1;421.5;421.5;0.0;0.0" keyTimes="0.0000;0.0000;0.0025;0.0050;0.0075;0.0100;0.0125;0.0150;0.0175;0.0200;0.0225;0.0250;0.0275;0.0300;0.0325;0.0350;0.0375;0.0400;0.0425;0.0450;0.0475;0.0500;0.0525;0.0550;0.0575;0.0600;0.0625;0.0650;0.0675;0.0700;0.0725;0.0750;0.0775;0.0800;0.0825;0.0850;0.0875;0.0900;0.0925;0.0950;0.0975;0.1000;0.1025;0.1050;0.1075;0.1100;0.1125;0.1150;0.1175;0.1200;0.1225;0.1250;0.2458;0.2500;1.0000"/></rect></clipPath>
+<text class="log anim" x="40" y="268" clip-path="url(#c1)">✓ tucheze · mytickets · cloudpay  gateways healthy</text>
+<clipPath id="c2"><rect x="40" y="252" height="22" width="0"><animate attributeName="width" calcMode="discrete" dur="12.0s" begin="6.0s" repeatCount="indefinite" values="0.0;0.0;8.4;16.9;25.3;33.7;42.1;50.6;59.0;67.4;75.9;84.3;92.7;101.2;109.6;118.0;126.4;134.9;143.3;151.7;160.2;168.6;177.0;185.5;193.9;202.3;210.8;219.2;227.6;236.0;244.5;252.9;261.3;269.8;278.2;286.6;295.1;303.5;303.5;0.0;0.0" keyTimes="0.0000;0.0000;0.0029;0.0058;0.0088;0.0117;0.0146;0.0175;0.0204;0.0233;0.0263;0.0292;0.0321;0.0350;0.0379;0.0408;0.0438;0.0467;0.0496;0.0525;0.0554;0.0583;0.0613;0.0642;0.0671;0.0700;0.0729;0.0758;0.0788;0.0817;0.0846;0.0875;0.0904;0.0933;0.0963;0.0992;0.1021;0.1050;0.2458;0.2500;1.0000"/></rect></clipPath>
+<text class="log anim" x="40" y="268" clip-path="url(#c2)">-&gt; fraud-detect: scoring txn in-path</text>
+<clipPath id="c3"><rect x="40" y="252" height="22" width="0"><animate attributeName="width" calcMode="discrete" dur="12.0s" begin="9.0s" repeatCount="indefinite" values="0.0;0.0;8.4;16.9;25.3;33.7;42.1;50.6;59.0;67.4;75.9;84.3;92.7;101.2;109.6;118.0;126.4;134.9;143.3;151.7;160.2;168.6;177.0;185.5;193.9;202.3;210.8;219.2;227.6;236.0;244.5;252.9;261.3;269.8;278.2;286.6;295.1;303.5;311.9;320.3;328.8;337.2;345.6;354.1;362.5;370.9;379.3;387.8;396.2;404.6;413.1;421.5;421.5;0.0;0.0" keyTimes="0.0000;0.0000;0.0025;0.0050;0.0075;0.0100;0.0125;0.0150;0.0175;0.0200;0.0225;0.0250;0.0275;0.0300;0.0325;0.0350;0.0375;0.0400;0.0425;0.0450;0.0475;0.0500;0.0525;0.0550;0.0575;0.0600;0.0625;0.0650;0.0675;0.0700;0.0725;0.0750;0.0775;0.0800;0.0825;0.0850;0.0875;0.0900;0.0925;0.0950;0.0975;0.1000;0.1025;0.1050;0.1075;0.1100;0.1125;0.1150;0.1175;0.1200;0.1225;0.1250;0.2458;0.2500;1.0000"/></rect></clipPath>
+<text class="log anim" x="40" y="268" clip-path="url(#c3)">1M+ users · fast, observable, boring in production</text>
+<text class="log" x="24" y="268">›</text>
+<text class="log static" x="40" y="268">1M+ users · fast, observable, boring in production</text>
+</svg>
