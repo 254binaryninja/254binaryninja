@@ -1,15 +1,27 @@
 # Arnold Musandu
 
-**Platform / Backend Engineer** in Nairobi. I build and run high-traffic systems: betting, ticketing, payments, and AI-backed learning tools.
-I care about systems that are fast, observable, cost-efficient, and **boring in production**.
+**Backend & Platform Engineer** · Go · PostgreSQL · Infrastructure · AI systems · Nairobi, Kenya
+
+I take products from first commit to production and keep them running: the APIs, the databases, the gateways, the deploy pipelines, and the 3am pages.
+I like systems that are fast, observable, cost-efficient, and **boring in production**.
+
+> **Open to** senior backend, platform, and AI engineering roles (remote or Nairobi).
 
 <p align="center">
   <img src="./assets/request-trace.svg" alt="Animated request trace: client → Cloudflare → Kong → Go service → Postgres, with a fraud-detect branch" width="100%">
 </p>
 
-<p align="center"><a href="https://claude.ai/artifact/P572fkpkEJeSm8n8JAx7A7"><b>↗ Explore the interactive system map</b></a></p>
-
 ---
+
+## At a glance
+
+* **Scale:** run the backend for a betting platform serving **1M+ users**
+* **Migrations:** moved a live production platform from Django to **Go** using staged staging → prod rollouts
+* **Breadth:** ship and operate **6 live products** across betting, ticketing, payments, hiring, and property
+* **Ownership:** responsible for the whole path from edge to database: gateways, CI/CD, schema migrations, security patching
+* **Data:** tune PostgreSQL query plans and schemas to cut infrastructure cost
+* **Risk:** built fraud-detection services that sit directly in the transaction path
+* **AI in production:** RAG plus multi-provider LLM failover serving **200+ students**
 
 ## Things I help run
 
@@ -54,6 +66,13 @@ A study platform with AI that reads your documents, P2P file sharing, and an LLM
 
 **Savannah Informatics** (healthcare): sped up NX monorepo CI and led the Keycloak auth migration · Angular · TypeScript · NX
 
+## How I work
+
+* **Staging first, always.** Every change gets rehearsed before it touches production.
+* **Measure, then optimize.** I let query plans and real traffic decide what to fix.
+* **Boring beats clever.** I pick tools the next engineer can debug half-asleep.
+* **Cost is a feature.** Fewer servers, cheaper queries, fewer moving parts.
+
 ---
 
 ## Open source
@@ -80,7 +99,7 @@ PostgreSQL internals & query planning · schema design under load · Java & Spri
 
 ---
 
-Building **developer tools, platform infrastructure, or data-heavy systems**? Let's talk.
+Hiring for **backend, platform, or AI engineering**, or building **developer tools and data-heavy systems**? Let's talk.
 [arnoldmusandu@gmail.com](mailto:arnoldmusandu@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arnold-musandu-3489b2293/) · Nairobi, Kenya
 
 > *Systems that scale, and stay sane in production.*
